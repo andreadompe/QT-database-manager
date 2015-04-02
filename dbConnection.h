@@ -14,7 +14,7 @@ public:
     dbConnection();
     ~dbConnection();
     bool CloseConnection();
-    bool Connect(QString dbAddress, QString dbName, QString port);
+    bool Connect(QString dbAddress, QString dbName, QString port, QString password, QString user);
     bool execQuery(QString sQuery, bool bLog, QStandardItemModel **pModel = 0);
     QString errDescr;   // Error description
     QString err;
